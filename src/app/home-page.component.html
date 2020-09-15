@@ -1,0 +1,47 @@
+<div class="home">
+	<mat-card (click)= "selectedCard($event)" class="workflow">
+		<mat-card-header>
+			<div mat-card-avatar class="workflow-header-image"></div>
+			<mat-card-title></mat-card-title>
+		</mat-card-header>
+		<img class="workflow-image" mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">
+		<mat-card-content class="workflow__content">
+				Workflow Viewer
+		</mat-card-content>
+	</mat-card>   
+
+<div class="workflow-viewer" *ngIf="selected">
+	<mat-card [routerLink]="['workflow']" class="workflow-viewer__create">
+		<mat-card-header>
+			<div mat-card-avatar class="workflow-header-image"></div>
+			<mat-card-title></mat-card-title>
+		</mat-card-header>
+		<!-- <img class="workflow-create-image" mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu"> -->
+		<mat-card-content class="workflow-viewer__content">
+				Create Workflow
+		</mat-card-content>
+	</mat-card>  
+
+  <mat-card  class="workflow-viewer__update">
+		<mat-card-header>
+			<div mat-card-avatar class="workflow-header-image"></div>
+			<mat-card-title></mat-card-title>
+		</mat-card-header>
+		<!-- <img class="workflow-create-image" mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu"> -->
+		<mat-card-content class="workflow-viewer__content">
+				Update Workflow
+		</mat-card-content>
+	</mat-card>    
+</div>
+
+	<mat-card *ngIf="!selected" class="dashboard" [routerLink]="['dashboard']">
+		<mat-card-header>
+			<div mat-card-avatar class="dashboard-header-image"></div>
+			<mat-card-title> </mat-card-title>
+		</mat-card-header>
+		<img class="dashboard-image" mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">
+		<mat-card-content class="dashboard__content">
+				Dashboard
+		</mat-card-content>
+	</mat-card>
+</div>

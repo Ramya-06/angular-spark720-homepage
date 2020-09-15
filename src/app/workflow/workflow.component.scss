@@ -1,0 +1,25 @@
+.worflow-page {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  position: relative;
+  bottom: 40px;
+  overflow: hidden;
+}
+.workflow-image{
+  width: 200px;
+  padding: 20px;
+  // position: relative;
+  // left: 60px;
+}
+.dashboard-image {
+width: 200px;
+  padding: 20px;
+}
+p {
+   position: relative;
+    left: 315px;
+    bottom: 50px;
+  font-family: Lato;
+}
